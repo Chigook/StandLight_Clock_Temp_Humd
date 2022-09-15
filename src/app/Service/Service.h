@@ -14,7 +14,7 @@ private:
     View *view;
 
 public:
-    Service(View *viewer);
+    Service(View *view);
     virtual ~Service();
     void updateState(std::string strState);
 

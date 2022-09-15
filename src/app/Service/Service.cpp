@@ -1,8 +1,8 @@
 #include "Service.h"
 
-Service::Service(View *viewer)
+Service::Service(View *view)
 {
-    view = viewer;
+    this->view = view;
     lightState = LIGHT_OFF;
 }
 

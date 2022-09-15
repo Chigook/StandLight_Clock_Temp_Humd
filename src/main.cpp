@@ -32,7 +32,7 @@ int main()
     Led led5(25);
     LCD lcd(new I2C("/dev/i2c-1", 0x27));
     View view(&led1, &led2, &led3, &led4, &led5, &lcd);
-    DHT11View dht11View(&lcd);
+    DHT11View dht11View(&lcd, &led1, &led2, &led3, &led4, &led5);
     ClockView clockView(&lcd);
     Service service(&view);
     ClockService clockService(&clockView);
